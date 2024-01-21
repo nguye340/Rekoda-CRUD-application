@@ -1,0 +1,9 @@
+spring:
+  data:
+      mongodb:
+        uri: mongodb://host:27017/db
+  h2: 
+   console:
+    enabled: true 
+  datasource:
+    url: jdbc:h2:mem:testdb
