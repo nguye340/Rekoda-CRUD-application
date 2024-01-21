@@ -2,7 +2,8 @@
 
 ## Introduction 🚀
 
-Greetings, we are Project 35, thrilled to showcase our Java project, Rakota. Today, we'll delve into the capstone project, Sentience, a Unity-based game centering on mental illness with a unique feature—Speech Emotion Recognition (SER) powered by Python and Psychit Learn library.
+The purpose of this web application in relation to our capstone project, Sentience, is to create a CRUD app to collect users' voice samples to train the Speech Emotion Recognition AI and improve its in-game accuracy, as well as promoting our game Sentience (now known as TIMEline).
+Note: Sentience is a Unity-based game centering on mental illness with a unique feature—Speech Emotion Recognition (SER) powered by Python and Scikit Learn library)
 
 ## Key Features 🌟
 
@@ -14,7 +15,7 @@ Greetings, we are Project 35, thrilled to showcase our Java project, Rakota. Tod
 
 - **Data Flow:** The recording application captures sound using RecordRTC JavaScript Library, converts it to Base64, and passes it to the Spring Boot backend.
 
-- **Storage:** MongoDB stores the data, including audio files saved as WAV. The frontend updates in real-time, displaying the latest recordings.
+- **Storage:** MongoDB stores the data, including audio files saved as WAV. The front end updates in real-time, displaying the latest recordings.
 
 ## Demo 🎥
 
@@ -44,4 +45,4 @@ This full-stack application is developed using Angular 8 for the front-end, Spri
 
 ## Closing Remarks 🌐
 
-Project 35 Recorder is a testament to our commitment to overcoming challenges and contributing to the realm of full-stack development. We appreciate your time and welcome any questions or comments. Thank you for joining us me this journey.
+Project 35's REKODA is a testament to our commitment to overcoming challenges and contributing to the realm of full-stack development. We appreciate your time and welcome any questions or comments. Thank you for joining us me this journey.
