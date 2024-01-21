@@ -1,0 +1,41 @@
+<link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<div style="text-align: center;">
+	<br>
+	<h2 class="text-glitch">Rekoda</h2>
+	<!-- Audio Visualizing Element -->
+	<div [hidden]="isToggle">
+	<br>
+	<main></main>
+    <br>
+    <br>
+    </div>
+	<button (click)="initiateRecording();toggle()"onclick="init()" class="btn btn-warning btn-theme"
+		*ngIf="!recording"
+		style="cursor: pointer; color: white; font-size: 20px;">
+		<i class="bi bi-mic-fill"></i> RECORD
+	</button>
+	
+	<button (click)="stopRecording(); toggle(); display()"
+		class="btn btn-danger btn-theme" *ngIf="recording"
+		style="cursor: pointer; color: white; font-size: 20px;">
+		<i class="bi bi-stop-fill"></i> STOP
+	</button>
+	<br>
+	<div [hidden]="isToggle"><br>
+		<h5 class="text-center text-glitch-light"> Thank you for sharing your voice with P35!</h5>
+	</div>
+	<br>
+	<audio controls="" *ngIf="url">
+	<source [src]="sanitize(url)" type="audio/wav">
+	</audio>
+	<br>
+	<br>
+	<button [hidden]="isShown" id="specialBtn"
+			routerLink="/list"
+			routerLinkActive="active"
+	>search playlist</button>
+</div>
+	
+
+

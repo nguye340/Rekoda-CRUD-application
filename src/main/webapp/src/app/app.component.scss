@@ -1,0 +1,24 @@
+.navbar-light .navbar-nav .nav-link {
+  color: #203235;
+}
+
+.navbar-bold {
+	text-decoration: bold;
+}
+
+bg-custom {
+	background: orange;
+}
+
+btn-info {
+	color: white;
+	text-decoration: bold;
+}
+
+@font-face {
+	font-family: 'arcade';
+	src: url('/assets/fonts/kwark-font/Kwark-1GeXM.ttf');
+}
+#text-arcade{
+	font-family: 'arcade';
+}

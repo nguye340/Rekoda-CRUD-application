@@ -1,0 +1,40 @@
+<div>
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg fixed-top bg-dark navbar-dark">
+		<div class="container">
+			<a class="navbar-brand" id="text-arcade" href="#"><img id="teamLogo"
+				src="assets/images/CapstoneGroupLogo.PNG"
+				alt="Project 35 Group" draggable="false" height="45" />P35</a>
+			<button class="navbar-toggler" type="button"
+				data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<i class="fas fa-bars"></i>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ms-auto align-items-center">
+					<li class="nav-item"><a class="nav-link mx-2" href="#"><i
+							class="fas fa-plus-circle pe-2"></i>Record</a></li>
+					<li class="nav-item"><a class="nav-link mx-2" routerLink="/list"><i
+							class="fas fa-bell pe-2"></i>Playlist</a></li>
+					<li class="nav-item ms-3"><a class="btn btn-warning btn-rounded" (click)="reloadLogin()" style="color:white"
+						>Sign in</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+    <br>
+    <br>
+	<br>
+	<br>
+	<div class="container text-white">
+	<br>
+		<div class="card" style="background: rgba(42,43,56,0.8);">
+			<div class="card-body">
+				<router-outlet></router-outlet>
+				<!-- <router-outlet></router-outlet> -->
+			</div>
+		</div>
+	</div>
+
+</div>

@@ -1,0 +1,37 @@
+
+<section class="glitch-container">
+	<h1 class="glitch pt-3 text-glitch-light">
+		Past Recording
+	</h1>
+</section>
+<hr>
+<ul class="list-group">
+	
+	<li *ngFor="let record of recordings" class="list-group-item"
+		style="background: #1f2425; margin-top: 10px">
+		<table class="mx-auto">
+		<tr class="text-white pb-3" style="font-weight:bold"><th>&nbsp;Date Recorded | {{record.date}}<br><th></tr>
+			<tr>
+				<td><audio controls="">
+						<source [src]="sanitize(record.base64string)" type="audio/wav">
+					</audio></td>
+				<td>
+					<button class="btn btn-warning rounded-circle mx-3"
+					 (click)="onRecordDelete(record.id)"
+						*ngIf="record" style="cursor: pointer; font-size: 23px;">
+						<i class="bi bi-trash-fill"></i>
+					</button>
+				<td>
+			</tr>
+		</table>
+	</li>
+	  <ng-container *ngIf="!recordings.length" [ngTemplateOutlet]="noItems"></ng-container>
+	 <ng-template #noItems>
+	 <div class="mx-auto tex-center">
+	 	<iframe src="https://giphy.com/embed/MEF8otYAThuOVdbJM3" width="360" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/covid-19-lockdown-stuck-inside-MEF8otYAThuOVdbJM3"></a></p>
+	 </div>
+</ng-template>
+	
+</ul>
+
+
