@@ -5,6 +5,9 @@
 The purpose of this web application in relation to our capstone project, Sentience, is to create a CRUD app to collect users' voice samples to train the Speech Emotion Recognition AI and improve its in-game accuracy, as well as promoting our game Sentience (now known as TIMEline).
 Note: Sentience is a Unity-based game centering on mental illness with a unique feature—Speech Emotion Recognition (SER) powered by Python and Scikit Learn library)
 
+[REKODA's Demo](https://www.youtube.com/watch?v=efgzlScauMw&t=112s&ab_channel=Th%E1%BA%A3oH%C3%A2nNguy%E1%BB%85n))
+
+
 ## Key Features 🌟
 
 - **Speech Emotion Recognition (SER):** Utilizing Python and Psychit Learn, our game captures players' emotions through voice, influencing in-game elements like weather. SER currently boasts a 74% accuracy with a dataset of 1000 voice samples.
